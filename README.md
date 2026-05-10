@@ -1,4 +1,8 @@
 # SHL Assessment Recommender 🎯
+---
+sdk: docker
+app_port: 7860
+---
 
 A conversational agent that helps hiring managers select the right SHL assessments through natural dialogue.
 
