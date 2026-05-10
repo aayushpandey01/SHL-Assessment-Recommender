@@ -113,6 +113,6 @@ A `[INSTRUCTION]` suffix is appended to the last user message (not the system pr
 | API | FastAPI + Uvicorn | Async, schema validation, auto-docs |
 | Retrieval | Custom keyword scoring | No dependency, zero latency, debuggable |
 | UI | Streamlit | Rapid iteration, no frontend build step |
-| Deployment | Render (free) | Simple, supports Python, env vars |
+| Deployment | Hugging Face Space | Simple, supports Python, env vars |
 
 
