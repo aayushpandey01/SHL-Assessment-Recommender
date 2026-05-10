@@ -154,13 +154,13 @@ pip install pytest pytest-asyncio
 pytest test_agent.py -v
 ```
 
-## Deployment (Render)
+## Deployment (Hugging Face Spaces)
 
-1. Push to GitHub
-2. Create Web Service on Render
-3. Set build command: `pip install -r requirements.txt`
-4. Set start command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-5. Add env vars: `GROQ_API_KEY`, `GROQ_MODEL`
+Go to https://huggingface.co → Sign up / Log in
+Click New Space → give it a name like shl-recommender
+Select Docker as the SDK
+Set visibility to Public
+Click Create Space
 
 ## Catalog Coverage
 
