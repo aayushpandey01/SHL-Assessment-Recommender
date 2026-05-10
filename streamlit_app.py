@@ -13,7 +13,14 @@ import streamlit as st
 # Configuration
 # ─────────────────────────────────────────────
 
-API_URL = os.getenv("API_URL", "http://localhost:8000")
+from dotenv import load_dotenv
+load_dotenv()
+
+# Works both locally (.env) and on Streamlit Cloud (st.secrets)
+try:
+    API_URL = st.secrets["API_URL"]
+except Exception:
+    API_URL = os.getenv("API_URL", "http://localhost:8000")
 
 TEST_TYPE_LABELS = {
     "A": "Ability & Aptitude",
